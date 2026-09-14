@@ -1,0 +1,29 @@
+{
+  "blocked_before_approval": 403,
+  "execution": {
+    "task_id": 4,
+    "title": "Review the invoice"
+  },
+  "audit": [
+    {
+      "id": 2,
+      "event": "execution_denied",
+      "plan_id": 1,
+      "role": "operator",
+      "reason": "Approval required before write"
+    },
+    {
+      "id": 3,
+      "event": "approved",
+      "plan_id": 1,
+      "role": "approver"
+    },
+    {
+      "id": 5,
+      "event": "executed",
+      "plan_id": 1,
+      "role": "operator",
+      "action": "create_task"
+    }
+  ]
+}
